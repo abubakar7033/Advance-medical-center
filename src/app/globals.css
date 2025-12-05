@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+@import "tailwindcss";
+
+/* Import Brand Colors and Animations */
+@import "./styles/colors.css";
+@import "./styles/animations.css";
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: 'Inter', sans-serif;
+}
+
+/* Utility Classes for Brand Colors */
+.bg-brand-primary { background-color: var(--brand-primary); }
+.bg-brand-dark { background-color: var(--bg-dark); }
+.text-brand-primary { color: var(--brand-primary); }
+.text-brand-secondary { color: var(--brand-secondary); }
+.text-brand-dark { color: var(--text-dark); }
+.bg-brand-secondary-light { background-color: var(--brand-secondary-light); }
+.border-brand-primary { border-color: var(--brand-primary); }
+.hover-bg-brand-primary:hover { background-color: var(--brand-primary-dark); }
+.hover\:text-brand-primary:hover { color: var(--brand-primary) !important; }
+.shadow-premium { box-shadow: var(--shadow-premium); }
+/* Global Styles */
+

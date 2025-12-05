@@ -1,0 +1,43 @@
+/* Brand Color Variables */
+:root {
+  /* Primary Brand Colors */
+  --brand-primary: #004E8C;
+  --brand-primary-dark: #003B70;
+  --brand-secondary: #1EACEA;
+  --brand-secondary-light: #e6f5ff;
+  
+  /* Text Colors */
+  --text-dark: #1A202C;
+  --text-slate-600: #475569;
+  --text-slate-700: #334155;
+  --text-blue-400: #0074C8;
+  
+  /* Background Colors */
+  --bg-light: #f8faff;
+  --bg-white: #ffffff;
+  --bg-dark: #0A2540;
+  
+  
+  /* Border Colors */
+  --border-slate-200: #e2e8f0;
+  --border-slate-300: #cbd5e1;
+  
+  /* Shadow Colors */
+  --shadow-premium: 0 10px 30px rgba(0, 78, 140, 0.08), 0 4px 12px rgba(0, 78, 140, 0.05);
+  --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  --shadow-2xl: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+}
+
+/* Utility Classes */
+.bg-brand-primary { background-color: var(--brand-primary); }
+.text-brand-primary { color: var(--brand-primary); }
+.border-brand-primary { border-color: var(--brand-primary); }
+.hover-bg-brand-primary:hover { background-color: var(--brand-primary-dark); }
+
+.text-brand-secondary { color: var(--brand-secondary); }
+.bg-brand-secondary-light { background-color: var(--brand-secondary-light); }
+
+.text-brand-dark { color: var(--text-dark); }
+.bg-brand-dark { background-color: var(--bg-dark); }
+
+.shadow-premium { box-shadow: var(--shadow-premium); }

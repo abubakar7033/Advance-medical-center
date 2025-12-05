@@ -1,0 +1,29 @@
+/* Animation Classes */
+.reveal { 
+  opacity: 0; 
+  transform: translateY(18px); 
+  transition: opacity .8s cubic-bezier(0.165, 0.84, 0.44, 1), 
+              transform .8s cubic-bezier(0.165, 0.84, 0.44, 1); 
+}
+
+.reveal.show { 
+  opacity: 1; 
+  transform: translateY(0); 
+}
+
+/* Navigation Active State */
+.nav-active { 
+  color: var(--brand-primary) !important; 
+  font-weight: 600; 
+}
+
+/* Smooth Scrolling */
+html { 
+  scroll-behavior: smooth; 
+}
+
+body { 
+  font-family: 'Inter', sans-serif; 
+  background-color: var(--bg-light);
+  color: var(--text-dark);
+}
