@@ -136,9 +136,9 @@ export const PortalSection: React.FC<PortalSectionProps> = ({ handleNavLinkClick
                 </div>
 
                 <a 
-                  // href="https://apps-lb.totalcloudpacs.com/login/"
-                  // target="_blank"
-                  // rel="noopener noreferrer"
+                  href="https://apps-lb.totalcloudpacs.com/login/"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="h-11 px-5 py-2 cursor-pointer sm:text-base text-sm w-full bg-gradient-to-r from-blue-800 to-blue-500 hover:from-[#005A9C] hover:to-[#003F6B] text-white rounded-lg font-semibold transition shadow-md flex items-center justify-center gap-2" 
                 >
                   Access TotalCloud PACS Portal
@@ -149,25 +149,10 @@ export const PortalSection: React.FC<PortalSectionProps> = ({ handleNavLinkClick
                   </LucideIcon>
                 </a>
 
-                <p className="text-xs text-center text-gray-500 pt-2">
-                  Secure login powered by TotalCloud PACS
-                </p>
+              
               </form>
 
-              <div className="mt-6 pt-6 border-t border-gray-200">
-                <a 
-                  href="https://apps-lb.totalcloudpacs.com/login/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-flex items-center justify-center gap-2 rounded-lg text-sm font-semibold h-10 px-4 py-2 w-full border border-blue-600 text-blue-600 hover:bg-blue-50 transition"
-                >
-                  Go to Portal Login
-                  <LucideIcon className="w-4 h-4">
-                    <path d="M5 12h14"></path>
-                    <path d="m12 5 7 7-7 7"></path>
-                  </LucideIcon>
-                </a>
-              </div>
+            
             </div>
           </div>
         </div>

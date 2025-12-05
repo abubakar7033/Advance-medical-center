@@ -72,7 +72,7 @@ export const Header: React.FC<HeaderProps> = ({
                 Services
               </NavLink>
               <NavLink href="#portal" activeSection={activeSection} onClick={handleNavLinkClick}>
-                 Portal
+                Provider Portal access
               </NavLink>
               <NavLink href="#about" activeSection={activeSection} onClick={handleNavLinkClick}>
                 About Us
@@ -83,13 +83,13 @@ export const Header: React.FC<HeaderProps> = ({
             </nav>
             
             {/* Provider Portal CTA */}
-            <a
+            {/* <a
               href="#portal"
               onClick={(e) => handleNavLinkClick(e, 'portal')}
               className="px-5 py-2.5 rounded-full bg-brand-primary text-white font-bold hover-bg-brand-primary transition shadow-premium text-sm tracking-wide"
             >
               Provider Portal
-            </a>
+            </a> */}
           </div>
 
           {/* Mobile Menu Button */}
@@ -114,17 +114,11 @@ export const Header: React.FC<HeaderProps> = ({
         <div className={`md:hidden pb-4 ${isMenuOpen ? 'block' : 'hidden'}`}>
           <div className="grid gap-2 text-sm font-medium">
             <MobileNavLink href="#services" onClick={handleNavLinkClick}>Services</MobileNavLink>
-            <MobileNavLink href="#portal" onClick={handleNavLinkClick}>Portal</MobileNavLink>
+            <MobileNavLink href="#portal" onClick={handleNavLinkClick}>Provider Portal access</MobileNavLink>
             <MobileNavLink href="#about" onClick={handleNavLinkClick}>About Us</MobileNavLink>
             <MobileNavLink href="#contact" onClick={handleNavLinkClick}>Contact</MobileNavLink>
             
-            <a
-              href="#portal"
-              onClick={(e) => handleNavLinkClick(e, 'portal')}
-              className="px-4 py-3 rounded-lg bg-brand-primary text-white font-semibold text-center mt-2 hover-bg-brand-primary transition shadow-md"
-            >
-              Provider Portal Access
-            </a>
+          
           </div>
         </div>
       </div>
