@@ -135,9 +135,11 @@ export const PortalSection: React.FC<PortalSectionProps> = ({ handleNavLinkClick
                   </div>
                 </div>
 
-                <button 
-                  className="h-11 px-5 py-2 sm:text-base text-sm w-full bg-gradient-to-r from-blue-800 to-blue-500 hover:from-[#005A9C] hover:to-[#003F6B] text-white rounded-lg font-semibold transition shadow-md flex items-center justify-center gap-2" 
-                  type="submit"
+                <a 
+                  // href="https://apps-lb.totalcloudpacs.com/login/"
+                  // target="_blank"
+                  // rel="noopener noreferrer"
+                  className="h-11 px-5 py-2 cursor-pointer sm:text-base text-sm w-full bg-gradient-to-r from-blue-800 to-blue-500 hover:from-[#005A9C] hover:to-[#003F6B] text-white rounded-lg font-semibold transition shadow-md flex items-center justify-center gap-2" 
                 >
                   Access TotalCloud PACS Portal
                   <LucideIcon className="w-4 h-4">
@@ -145,7 +147,7 @@ export const PortalSection: React.FC<PortalSectionProps> = ({ handleNavLinkClick
                     <path d="M10 14 21 3"></path>
                     <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
                   </LucideIcon>
-                </button>
+                </a>
 
                 <p className="text-xs text-center text-gray-500 pt-2">
                   Secure login powered by TotalCloud PACS
@@ -154,8 +156,9 @@ export const PortalSection: React.FC<PortalSectionProps> = ({ handleNavLinkClick
 
               <div className="mt-6 pt-6 border-t border-gray-200">
                 <a 
-                  href="#contact" 
-                  onClick={(e) => handleNavLinkClick(e, 'contact')} 
+                  href="https://apps-lb.totalcloudpacs.com/login/"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="inline-flex items-center justify-center gap-2 rounded-lg text-sm font-semibold h-10 px-4 py-2 w-full border border-blue-600 text-blue-600 hover:bg-blue-50 transition"
                 >
                   Go to Portal Login

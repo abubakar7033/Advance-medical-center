@@ -56,12 +56,14 @@ export const Header: React.FC<HeaderProps> = ({
 }) => {
   return (
     <header className="sticky top-0 z-50 bg-white/95 backdrop-blur-sm border-b border-slate-200/60 shadow-sm">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex items-center justify-between py-5">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-4">
+        <div className="flex items-center justify-between pb-3 pt-6">
           {/* Logo Area */}
-          <a href="#home" onClick={(e) => handleNavLinkClick(e, 'home')} className="flex items-center gap-3">
-            <img src="/images/headerlogo.png" alt="logo" className='object-cover w-24 h-12'/>
+          <div className='w-36 h-12 flex items-center justify-between'>
+            <a href="#home" onClick={(e) => handleNavLinkClick(e, 'home')} className="flex items-center gap-3">
+            <img src="/images/headerlogo.png" alt="logo" className='object-contain w'/>
           </a>
+          </div>
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center gap-8 text-sm font-semibold">
@@ -70,7 +72,7 @@ export const Header: React.FC<HeaderProps> = ({
                 Services
               </NavLink>
               <NavLink href="#portal" activeSection={activeSection} onClick={handleNavLinkClick}>
-                Provider Portal
+                 Portal
               </NavLink>
               <NavLink href="#about" activeSection={activeSection} onClick={handleNavLinkClick}>
                 About Us
@@ -81,13 +83,13 @@ export const Header: React.FC<HeaderProps> = ({
             </nav>
             
             {/* Provider Portal CTA */}
-            {/* <a
+            <a
               href="#portal"
               onClick={(e) => handleNavLinkClick(e, 'portal')}
               className="px-5 py-2.5 rounded-full bg-brand-primary text-white font-bold hover-bg-brand-primary transition shadow-premium text-sm tracking-wide"
             >
               Provider Portal
-            </a> */}
+            </a>
           </div>
 
           {/* Mobile Menu Button */}
@@ -116,13 +118,13 @@ export const Header: React.FC<HeaderProps> = ({
             <MobileNavLink href="#about" onClick={handleNavLinkClick}>About Us</MobileNavLink>
             <MobileNavLink href="#contact" onClick={handleNavLinkClick}>Contact</MobileNavLink>
             
-            {/* <a
+            <a
               href="#portal"
               onClick={(e) => handleNavLinkClick(e, 'portal')}
               className="px-4 py-3 rounded-lg bg-brand-primary text-white font-semibold text-center mt-2 hover-bg-brand-primary transition shadow-md"
             >
               Provider Portal Access
-            </a> */}
+            </a>
           </div>
         </div>
       </div>

@@ -52,14 +52,23 @@ export const HeroSection: React.FC<HeroSectionProps> = ({ handleNavLinkClick }) 
               </a>
             </div>
 
-    <div className="mt-8 grid grid-cols-1 sm:grid-cols-2 gap-4">
-  <div className="p-5 rounded-2xl shadow-md bg-white border border-gray-200">
-    <div className="text-blue-600 font-bold text-lg">Board‑Certified</div>
-    <div className="text-gray-600 text-sm">Subspecialty expertise</div>
+    <div className="mt-8 grid grid-cols-1 sm:grid-cols-2 gap-4 ">
+  <div className="p-5 rounded-2xl shadow-md bg-white border border-gray-200 flex items-start gap-3">
+    <LucideIcon className="w-6 h-6 text-blue-600 flex-shrink-0">
+      <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10"></path>
+      <path d="m9 12 2 2 4-4"></path>
+    </LucideIcon>
+    <div>
+      <div className="text-blue-600 font-bold text-lg">Board‑Certified</div>
+      <div className="text-gray-600 text-sm">Subspecialty expertise</div>
+    </div>
   </div>
-  <div className="p-5 rounded-2xl shadow-md bg-white border border-gray-200">
-    <div className="text-blue-600 font-bold text-lg">HIPAA</div>
-    <div className="text-gray-600 text-sm">Secure &amp; compliant</div>
+  <div className="p-5 rounded-2xl shadow-md bg-white border border-gray-200 flex items-start gap-3">
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="w-6 h-6 text-blue-600 flex-shrink-0"><path d="m2 2 20 20"/><path d="M5 5a1 1 0 0 0-1 1v7c0 5 3.5 7.5 7.67 8.94a1 1 0 0 0 .67.01c2.35-.82 4.48-1.97 5.9-3.71"/><path d="M9.309 3.652A12.252 12.252 0 0 0 11.24 2.28a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1v7a9.784 9.784 0 0 1-.08 1.264"/></svg> 
+    <div>
+      <div className="text-blue-600 font-bold text-lg">HIPAA</div>
+      <div className="text-gray-600 text-sm">Secure &amp; compliant</div>
+    </div>
   </div>
 </div>
 

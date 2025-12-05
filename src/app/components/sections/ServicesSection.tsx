@@ -81,6 +81,11 @@ export const ServicesSection: React.FC = () => {
               key={index} 
               className="reveal group rounded-2xl bg-white border border-gray-200 hover:border-blue-400 hover:shadow-lg transition-all duration-300 p-6"
             >
+              <div className="w-10 h-10 mb-3 rounded-full bg-brand-secondary-light flex items-center justify-center text-brand-secondary group-hover:bg-brand-primary/10 transition">
+                  <LucideIcon className="w-5 h-5">
+                    {iconPaths[service.icon]}
+                  </LucideIcon>
+                </div>
               <h4 className="text-lg md:text-xl font-bold text-gray-900 mb-2 group-hover:text-[#0074C8] transition-colors">
                 {service.title}
               </h4>
