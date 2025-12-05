@@ -53,7 +53,7 @@ export const metadata: Metadata = {
     siteName: 'Advanced Professional Imaging Medical Center',
     images: [
       {
-        url: '/images/og-image.jpg',
+        url: '/images/logo.png',
         width: 1200,
         height: 630,
         alt: 'Advanced Professional Imaging Medical Center - Expert Medical Imaging Services',
