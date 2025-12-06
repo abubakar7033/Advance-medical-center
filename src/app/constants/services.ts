@@ -24,21 +24,8 @@ export const SERVICES = [
     icon: 'heart',
     desc: 'Screening and diagnostic mammogram reports.' 
   },
-  { 
-    title: 'Nuclear Medicine', 
-    icon: 'download',
-    desc: 'SPECT and planar scintigraphy readings.' 
-  },
-  { 
-    title: 'PET Scans', 
-    icon: 'clock',
-    desc: 'Positron Emission Tomography for oncologic staging.' 
-  },
-  { 
-    title: 'Interventional', 
-    icon: 'users',
-    desc: 'Support for biopsy guidance and drainage procedures.' 
-  },
+  
+ 
 ];
 
 export const SECTION_IDS = ['home', 'services', 'portal', 'about', 'contact'] as const;
